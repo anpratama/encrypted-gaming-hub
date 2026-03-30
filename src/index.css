@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Blink UI Theme CSS
+   REQUIRED for @blinkdotnew/ui components to render correctly.
+   BlinkUIProvider adds .theme-{name} + .dark/.light to <html>,
+   activating the matching CSS variable set below.
+   ───────────────────────────────────────────────────────────────────────────── */
+@import '@blinkdotnew/ui/styles';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: var(--tracking-normal);
+  }
+}
+
+/* ── FHE.GG Dark Cyber Palette ───────────────────────────────────────────────── */
+:root {
+  --background: 240 91% 3%;
+  --foreground: 240 20% 95%;
+  --card: 240 50% 6%;
+  --card-foreground: 240 20% 95%;
+  --popover: 240 50% 6%;
+  --popover-foreground: 240 20% 95%;
+  --primary: 160 100% 50%;
+  --primary-foreground: 240 91% 3%;
+  --secondary: 240 30% 10%;
+  --secondary-foreground: 240 20% 80%;
+  --muted: 240 30% 10%;
+  --muted-foreground: 240 15% 55%;
+  --accent: 270 100% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 90% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 30% 15%;
+  --input: 240 30% 12%;
+  --ring: 160 100% 50%;
+
+  --chart-1: 160 100% 50%;
+  --chart-2: 270 100% 60%;
+  --chart-3: 47 96% 53%;
+  --chart-4: 200 100% 55%;
+  --chart-5: 0 90% 60%;
+
+  --sidebar: 240 50% 6%;
+  --sidebar-foreground: 240 20% 95%;
+  --sidebar-primary: 160 100% 50%;
+  --sidebar-primary-foreground: 240 91% 3%;
+  --sidebar-accent: 270 100% 60%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 240 30% 15%;
+  --sidebar-ring: 160 100% 50%;
+
+  /* Fonts */
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-serif: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows */
+  --shadow-2xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.3);
+  --shadow-xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.3);
+  --shadow-sm: 0px 4px 8px -1px hsl(0 0% 0% / 0.4), 0px 1px 2px -2px hsl(0 0% 0% / 0.3);
+  --shadow: 0px 4px 8px -1px hsl(0 0% 0% / 0.4), 0px 1px 2px -2px hsl(0 0% 0% / 0.3);
+  --shadow-md: 0px 4px 8px -1px hsl(0 0% 0% / 0.5), 0px 2px 4px -2px hsl(0 0% 0% / 0.4);
+  --shadow-lg: 0px 4px 8px -1px hsl(0 0% 0% / 0.5), 0px 4px 6px -2px hsl(0 0% 0% / 0.4);
+  --shadow-xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.5), 0px 8px 10px -2px hsl(0 0% 0% / 0.4);
+  --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.7);
+
+  /* Misc */
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+
+  /* Custom FHE palette extras */
+  --fhe-green: #00FFB2;
+  --fhe-purple: #7B2FFF;
+  --fhe-dark: #050510;
+  --fhe-card: #0A0A1E;
+  --fhe-border: #1A1A3E;
+}
+
+:root.dark,
+.theme-linear.dark,
+.theme-glass.dark,
+.theme-midnight.dark,
+.theme-minimal.dark {
+  --background: 240 91% 3%;
+  --foreground: 240 20% 95%;
+  --card: 240 50% 6%;
+  --card-foreground: 240 20% 95%;
+  --popover: 240 50% 6%;
+  --popover-foreground: 240 20% 95%;
+  --primary: 160 100% 50%;
+  --primary-foreground: 240 91% 3%;
+  --secondary: 240 30% 10%;
+  --secondary-foreground: 240 20% 80%;
+  --muted: 240 30% 10%;
+  --muted-foreground: 240 15% 55%;
+  --accent: 270 100% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 90% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 30% 15%;
+  --input: 240 30% 12%;
+  --ring: 160 100% 50%;
+  --chart-1: 160 100% 50%;
+  --chart-2: 270 100% 60%;
+  --chart-3: 47 96% 53%;
+  --chart-4: 200 100% 55%;
+  --chart-5: 0 90% 60%;
+  --sidebar: 240 50% 6%;
+  --sidebar-foreground: 240 20% 95%;
+  --sidebar-primary: 160 100% 50%;
+  --sidebar-primary-foreground: 240 91% 3%;
+  --sidebar-accent: 270 100% 60%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 240 30% 15%;
+  --sidebar-ring: 160 100% 50%;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
