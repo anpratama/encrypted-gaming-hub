@@ -2,7 +2,7 @@
 
 > The world's first blockchain gaming platform powered by Fully Homomorphic Encryption (FHE). Your hand stays hidden. The outcome stays fair. Everything on-chain.
 
-Live: [encrypted-gaming-hub-pf37ywt8.blinkpowered.com](https://encrypted-gaming-hub-pf37ywt8.blinkpowered.com)
+Live: [fhegamehub.vercel.app](https://fhegamehub.vercel.app/))
 
 ---
 
